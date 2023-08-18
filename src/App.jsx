@@ -23,7 +23,6 @@ function App() {
           </section>
         )}
       </main>
-      <footer>{`Copyright © ${new Date().getFullYear()} Ilir Hajdari`}</footer>
     </div>
   );
 }
