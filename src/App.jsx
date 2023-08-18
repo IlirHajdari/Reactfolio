@@ -1,27 +1,21 @@
-import { useState } from "react";
+import Intro from "./components/Intro";
+import Portfolio from "./components/Portfolio";
+import Navigation from "./components/Navigation";
+import Header from "./components/Header";
+import Timeline from "./components/Timeline";
+import Contact from "./components/Contact";
+import Footer from "./components/footer";
 
 function App() {
-  const [showAbout, setShowAbout] = useState(false);
-
-  const handleToggleAbout = () => {
-    setShowAbout((prevState) => !prevState);
-  };
-
   return (
-    <div className="container">
-      <header>{`Developer: Ilir Hajdari`}</header>
-      <nav>
-        <button onClick={handleToggleAbout}>
-          {showAbout ? "Hide About" : "Show About"}
-        </button>
-      </nav>
-      <main>
-        {showAbout && (
-          <section>
-            {"This is the about me section. I'm Ilir, a web developer..."}
-          </section>
-        )}
-      </main>
+    <div className="App">
+      <Intro />
+      <Portfolio />
+      <Navigation />
+      <Header />
+      <Timeline />
+      <Contact />
+      <Footer />
     </div>
   );
 }
