@@ -18,4 +18,14 @@ export default [
     details: `I graduated from college with a BS in Computer Science in February of this year!
       I learned about computer science theory, architecture, programming and delved into artificial intelligence and facial recognition.`,
   },
+  {
+    year: "2020",
+    title: "Systems Administrator",
+    duration: "3 years",
+    details: `As a Systems Administrator, I have engineered and integrated intricate operational databases and configurations,
+            utilizing Windows Server 2016. My expertise in developing and executing systems integration tests has led to a
+            significant 60% reduction in downtime. Working collaboratively with cross-functional teams, I've played a pivitol
+            role in optimizing network performance, ensuring a consistent 24/7 service availability. Additionally, I ouversee user
+            account systems and applications, adhering to the principle of least privilege to guarantee optimal security.`,
+  },
 ];
