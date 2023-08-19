@@ -1,10 +1,10 @@
 function TimelineItem({ year, title, duration, details }) {
   return (
-    <ol className="flex flex-col med-flex-row relative border-l border-stone-400">
+    <ol className="flex flex-col md:flex-row relative border-l border-stone-400">
       <li className="mb-10 ml-4">
         <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-black"></div>
         <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
-          <span className="inilne-block px-2 py-1 font-semibold text-white bg-stone-900 rounded-md">
+          <span className="inline-block px-2 py-1 font-semibold text-white bg-stone-900 rounded-md">
             {year}
           </span>
           <h3 className="text-lg font-semibold text-stone-900">{title}</h3>
@@ -12,7 +12,7 @@ function TimelineItem({ year, title, duration, details }) {
             {duration}
           </div>
         </p>
-        <p className="my-2 text-base font-normatl text-stone-500">{details}</p>
+        <p className="my-2 text-base font-normal text-stone-500">{details}</p>
       </li>
     </ol>
   );
