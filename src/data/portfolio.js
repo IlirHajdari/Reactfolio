@@ -14,7 +14,7 @@ export default [
   {
     title: "Jotter: Electronic Document Interface",
     imgUrl: "/assets/JEDI.png",
-    stack: ["Express.js", "Webpack", "Babel", "HTML", "CSS"],
+    stack: ["Express.js", "Webpack", "HTML", "CSS"],
     link: "https://j-e-d-i-a588d6870c22.herokuapp.com/",
   },
 ];
