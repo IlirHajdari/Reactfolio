@@ -7,7 +7,9 @@ function Intro() {
       <p className="text-base md:text -xl mb-3 font-medium">
         Systems Administrator & Web Developer
       </p>
-      <p className="text-sm max-w-xl mb-6 font-bold">This is my entire bio.</p>
+      <p className="text-sm max-w-xl mb-6 font-bold">
+        Welcome to my portfolio!
+      </p>
     </div>
   );
 }
