@@ -1,5 +1,5 @@
 function Intro() {
-  return <div></div>;
+  return <div>Intro</div>;
 }
 
 export default Intro;
