@@ -1,3 +1,5 @@
+import Header from "./Header";
+
 function Contact() {
   return (
     <div className="flex flex-col mb-10 mx-auto">
@@ -7,6 +9,7 @@ function Contact() {
           method="POST"
           className="flex flex-col w-full md:w-7/12"
         >
+          <Header>Get In Touch!</Header>
           <input
             type="text"
             name="name"
