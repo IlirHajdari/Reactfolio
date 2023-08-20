@@ -2,6 +2,17 @@ import { forwardRef } from "react";
 import Header from "./Header";
 
 const Contact = forwardRef((props, ref) => {
+  const validateEmail = (e) => {
+    const emailField = e.target;
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+    if (!emailRegex.test(emailField.value)) {
+      emailField.setCustomValidity("Please enter a valid email address.");
+    } else {
+      emailField.setCustomValidity("");
+    }
+  };
+
   return (
     <div ref={ref} id={props.id} className="flex flex-col mb-10 mx-auto">
       <div className="flex justify-center items-center">
@@ -18,14 +29,17 @@ const Contact = forwardRef((props, ref) => {
             className="p-2 bg-transparent
             border-2 rounded-md
             focus:outline-none"
+            required
           />
           <input
-            type="text"
+            type="email"
             name="email"
             placeholder="Email Address"
             className="my-3 p-2 bg-transparent
             border-2 rounded-md
             focus:outline-none"
+            required
+            onBlur={validateEmail}
           />
           <textarea
             name="message"
@@ -34,9 +48,10 @@ const Contact = forwardRef((props, ref) => {
             className="p-2 mb-4 bg-transparent 
           border-2 rounded-md
           focus:outline-none"
+            required
           ></textarea>
           <button
-            type="button"
+            type="submit"
             className="text-center inline-block
           px-4 opy-5 w-max text-base
           font-medium rounded-md text-white
