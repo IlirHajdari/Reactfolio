@@ -6,7 +6,7 @@ function PortfolioItem({ imgUrl, title, stack, link }) {
         <img
           src={imgUrl}
           alt={title}
-          className="w-full h-36 md:h-48 object-cover cursor-pointer"
+          className="w-full h-36 md:h-48 object-cover object-center cursor-pointer pt-.5"
         />
       </a>
       <div className="w-full p-4">
