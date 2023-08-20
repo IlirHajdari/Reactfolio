@@ -2,10 +2,11 @@ import { forwardRef } from "react";
 import portfolioData from "../data/portfolio";
 import PortfolioItem from "./PortfolioItem";
 
-const Portfolio = forwardRef((_, ref) => {
+const Portfolio = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
+      id={props.id}
       className="flex flex-col med:flex-row items-center justify-center"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -8,11 +8,11 @@ export default [
     link: "#portfolio",
   },
   {
-    title: "Contact",
-    link: "#contact",
-  },
-  {
     title: "Resume",
     link: "#resume",
+  },
+  {
+    title: "Contact",
+    link: "#contact",
   },
 ];

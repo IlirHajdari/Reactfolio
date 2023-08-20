@@ -1,9 +1,10 @@
 import { forwardRef } from "react";
 
-const Intro = forwardRef((_, ref) => {
+const Intro = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
+      id={props.id}
       className="flex items-center justify-center flex-col text-center pt-20 pb-6"
     >
       <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-bold">

@@ -1,9 +1,9 @@
 import { forwardRef } from "react";
 import Header from "./Header";
 
-const Contact = forwardRef((_, ref) => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="flex flex-col mb-10 mx-auto">
+    <div ref={ref} id={props.id} className="flex flex-col mb-10 mx-auto">
       <div className="flex justify-center items-center">
         <form
           action="https://getform.io/f/90aa5a03-b07f-4237-8fb5-930ebcab70b2"
