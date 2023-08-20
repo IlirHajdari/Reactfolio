@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import Header from "./Header";
 
-function Contact() {
+const Contact = forwardRef((_, ref) => {
   return (
-    <div className="flex flex-col mb-10 mx-auto">
+    <div ref={ref} className="flex flex-col mb-10 mx-auto">
       <div className="flex justify-center items-center">
         <form
           action="https://getform.io/f/90aa5a03-b07f-4237-8fb5-930ebcab70b2"
@@ -48,6 +49,8 @@ function Contact() {
       </div>
     </div>
   );
-}
+});
+
+Contact.displayName = "Contact";
 
 export default Contact;

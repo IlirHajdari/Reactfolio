@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
-//import Navigation from "./components/Navigation";
-//import Header from "./components/Header";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(null);
-
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
@@ -90,6 +88,7 @@ function App() {
       min-h-screen font-inter"
       >
         <div className="max-w-5xl w-11/12 mx-auto">
+          <Navbar />
           <Intro />
           <Portfolio />
           <Timeline />
