@@ -14,7 +14,10 @@ const Intro = forwardRef((props, ref) => {
         Systems Administrator & Web Developer
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        Welcome to my portfolio!
+        Welcome to my portfolio! My name is Ilir Hajdari and I am in the process
+        of learning how to become a Web Developer. Give my portfolio a look and
+        let me know what you think by sending me a message through the contact
+        form. Thank you!
       </p>
     </div>
   );
