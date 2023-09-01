@@ -35,4 +35,10 @@ export default [
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://ilirhajdari.github.io/javascript-knowledge-quiz/",
   },
+  {
+    title: "World Wire News",
+    imgUrl: "/assets/MapUI Whitespace.png",
+    stack: ["React", "JavaScript", "MongoDB", "Tailwind"],
+    link: "https://worldwire-news-863d47e11145.herokuapp.com/",
+  },
 ];
